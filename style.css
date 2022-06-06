@@ -1,0 +1,51 @@
+/*--------------------
+        Fonts 
+----------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+/*-----------------------
+     global styles 
+-------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #FF6200;
+    --dark-color: #0000;
+
+}
+/* ----------------
+        Header
+------------------*/
+header{
+    background: url(/images/charcoal.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.nav-bar{
+    margin-top: 2%;
+}
+.nav-bar ul li{
+    display: inline;
+    padding: 10px;
+    font-size: 25px;
+}
+.nav-bar ul li a{
+    color: #ffff;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+.nav-bar ul li a:hover{
+    background-color: var(--main-color);
+}
