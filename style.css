@@ -27,13 +27,22 @@ header{
     background-position: center;
     position: relative;
 }
+.container .logo{
+    margin-left: 2%;
+    margin-top: 0.5%;
+}
 .navbar .container{
     display: flex;
     justify-content: space-between;
     padding: 0;
 }
+.container .icons{
+    margin-right: 2%;
+    margin-top: 0.5%;
+}
 .nav-bar{
     margin-top: 2%;
+    
 }
 .nav-bar ul li{
     display: inline;
@@ -48,4 +57,23 @@ header{
 }
 .nav-bar ul li a:hover{
     background-color: var(--main-color);
+
+}
+
+button{
+    height: 50px;
+    width: 120px;
+    border-radius: 50px;
+    border: none;
+}
+.btn-cart{
+    font-size: 20px;
+    color: var(--main-color);
+    margin-right: 5px;
+}
+.btn-user{
+    border-radius: 50%;
+    height: 60px;
+    width: 65px;
+    
 }
