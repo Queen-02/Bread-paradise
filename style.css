@@ -2,78 +2,267 @@
         Fonts 
 ----------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+
+/* font-family: 'Smooch', cursive; */
+/* font-family: 'Marko One', serif; */
 
 /*-----------------------
      global styles 
 -------------------------*/
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    cursor:pointer
 }
-:root{
+
+:root {
     --main-color: #FF6200;
     --dark-color: #0000;
+    --white: #fff;
 
 }
+
 /* ----------------
         Header
 ------------------*/
-header{
-    background: url(/images/charcoal.jpg);
+header {
+    background-image: url(/images/brd.jpg);
+    background-color: rgba(0, 0, 0, 0.542);
+    background-blend-mode: overlay;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
 }
-.container .logo{
+
+.container .logo {
     margin-left: 2%;
     margin-top: 0.5%;
 }
-.navbar .container{
+
+.navbar .container {
     display: flex;
     justify-content: space-between;
     padding: 0;
 }
-.container .icons{
+
+.container .icons {
     margin-right: 2%;
     margin-top: 0.5%;
 }
-.nav-bar{
+
+.nav-bar {
     margin-top: 2%;
-    
+    margin-left: 5%;
+
 }
-.nav-bar ul li{
+
+.nav-bar ul li {
     display: inline;
     padding: 10px;
-    font-size: 25px;
+    font-size: 20px;
 }
-.nav-bar ul li a{
+
+.nav-bar ul li a {
     color: #ffff;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
 }
-.nav-bar ul li a:hover{
-    background-color: var(--main-color);
+
+.nav-bar ul li a:hover {
+    color: var(--main-color);
 
 }
 
-button{
-    height: 50px;
+button {
+    height: 35px;
     width: 120px;
     border-radius: 50px;
     border: none;
 }
-.btn-cart{
+.btn-cart i{
+    font-size: 20px; 
+    color: #FF6200
+}
+.btn-search i{
+    font-size: 20px; 
+    color: #FF6200
+}
+.btn-user i{
+    font-size: 20px; 
+    color: #FF6200
+}
+
+.btn-cart {
     font-size: 20px;
     color: var(--main-color);
     margin-right: 5px;
 }
-.btn-user{
+
+.btn-user {
     border-radius: 50%;
     height: 60px;
     width: 65px;
+}
+
+/* -----------------------
+        Home section 
+--------------------------*/
+
+.home {
+    justify-content: center;
+}
+
+.side-word {
+    text-align: center;
+
+}
+
+.side-word h1 {
+    color: #fff;
+    font-family: 'Marko One', serif;
+    font-size: 6em;
+    margin-top: 10%;
+}
+
+.side-word span {
+    font-family: 'Smooch', cursive;
+    color: var(--main-color);
+    font-weight: 300;
+}
+
+.order {
+    background-color: var(--main-color);
+    height: 50px;
+    width: 200px;
+    color: #fff;
+    font-family: 'Marko One', serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.order i {
+    color: #fff;
+}
+
+.order:hover {
+    background-color: #ffff;
+    color: var(--main-color);
+}
+
+.order i:hover {
+    color: var(--main-color);
+}
+
+.cons {
+    margin-top: 2%;
+}
+
+.cons i {
+    font-size: 30px;
+    padding: 5px;
+    color: var(--white);
+}
+
+/*-------------------------------------
+    MEDIA QUERIES FOR HOME PAGE 
+--------------------------------------*/
+@media (max-width: 768px) {
+    header {
+        background-image: url(/images/brd.jpg);
+        background-color: rgba(0, 0, 0, 0.542);
+        background-blend-mode: overlay;
+        height: 65vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    .container .logo {
+        margin-left: 2%;
+        margin-top: 0.5%;
+    }
+
+    .nav-bar {
+        margin-top: 2%;
+        margin-left: 5%;
     
+    }
+
+    .nav-bar ul li {
+        display: inline;
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .nav-bar ul li a {
+        color: #ffff;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+    }
+
+    button {
+        height: 35px;
+        width: 100px;
+        border-radius: 50px;
+        border: none;
+    }
+
+    .side-word {
+        text-align: center;
+    
+    }
+    
+    .side-word h1 {
+        color: #fff;
+        font-family: 'Marko One', serif;
+        font-size:  3.5em;
+        margin-top: 10%;
+    }
+    
+    .side-word span {
+        font-family: 'Smooch', cursive;
+        color: var(--main-color);
+        font-weight: 300;
+    }
+
+    .order {
+        background-color: var(--main-color);
+        height: 50px;
+        width: 200px;
+        color: #fff;
+        font-family: 'Marko One', serif;
+        font-weight: 500;
+        font-size: 25px;
+    }
+    
+    .order i {
+        color: #fff;
+    }
+    
+    .order:hover {
+        background-color: #ffff;
+        color: var(--main-color);
+    }
+    
+    .order i:hover {
+        color: var(--main-color);
+    }
+    
+    .cons {
+        margin-top: 2%;
+    }
+    
+    .cons i {
+        font-size: 30px;
+        padding: 5px;
+        color: var(--white);
+    }
 }
