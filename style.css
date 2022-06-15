@@ -15,7 +15,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    cursor:pointer
+    cursor: pointer
 }
 
 :root {
@@ -85,16 +85,19 @@ button {
     border-radius: 50px;
     border: none;
 }
-.btn-cart i{
-    font-size: 20px; 
+
+.btn-cart i {
+    font-size: 20px;
     color: #FF6200
 }
-.btn-search i{
-    font-size: 20px; 
+
+.btn-search i {
+    font-size: 20px;
     color: #FF6200
 }
-.btn-user i{
-    font-size: 20px; 
+
+.btn-user i {
+    font-size: 20px;
     color: #FF6200
 }
 
@@ -192,7 +195,7 @@ button {
     .nav-bar {
         margin-top: 2%;
         margin-left: 5%;
-    
+
     }
 
     .nav-bar ul li {
@@ -217,16 +220,16 @@ button {
 
     .side-word {
         text-align: center;
-    
+
     }
-    
+
     .side-word h1 {
         color: #fff;
         font-family: 'Marko One', serif;
-        font-size:  3.5em;
+        font-size: 3.5em;
         margin-top: 10%;
     }
-    
+
     .side-word span {
         font-family: 'Smooch', cursive;
         color: var(--main-color);
@@ -242,27 +245,173 @@ button {
         font-weight: 500;
         font-size: 25px;
     }
-    
+
     .order i {
         color: #fff;
     }
-    
+
     .order:hover {
         background-color: #ffff;
         color: var(--main-color);
     }
-    
+
     .order i:hover {
         color: var(--main-color);
     }
-    
+
     .cons {
         margin-top: 2%;
     }
-    
+
     .cons i {
         font-size: 30px;
         padding: 5px;
         color: var(--white);
+    }
+}
+
+/* ------------------------
+        About Section
+----------------------------*/
+#about {
+    background-image: url(images/black-two.jpg);
+    height: 150vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.recipe-sec h1 {
+    color: var(--white);
+    font-size: 5em;
+    font-family: 'Marko One', serif;
+}
+
+.recipe-sec h2 {
+    font-size: 1.5em;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.column img {
+    border: 20px solid var(--main-color);
+    object-fit: cover;
+    height: 350px;
+    width: 410px;
+}
+
+.column h3 {
+    font-family: 'Marko One', serif;
+    color: var(--white);
+    font-size: 1.5em;
+}
+
+.column p {
+    color: var(--white);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.column {
+    display: block;
+    border: none;
+}
+
+.btn-recipe{
+    background-color: var(--main-color);
+    float: right;
+    height: 8%;
+    width:  35%;
+}
+.btn-recipe a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Marko One', serif;
+}
+
+.foto img {
+    height: 180px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.foto {
+    display: flex;
+    /* margin-right: auto; */
+    padding: 1%;
+}
+
+.foto h3 {
+    font-size: 1em;
+}
+
+.words {
+    margin-left: 1em;
+}
+
+.foto p {
+    margin-top: 1em;
+}
+
+.view {
+
+    float: right;
+}
+
+.view h4 {
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    font-weight:300;
+}
+
+/*-------------------------------------
+    MEDIA QUERIES FOR ABOUT PAGE 
+--------------------------------------*/
+@media (max-width: 768px) {
+    #about {
+        background-image: url(images/black-two.jpg);
+        height: 250vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .recipe-sec h1 {
+        color: var(--white);
+        font-size: 3.5em;
+        font-family: 'Marko One', serif;
+        text-align: center;
+    }
+
+    .recipe-sec h2 {
+        font-size: 1.5em;
+        color: var(--white);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .column img {
+        border: 20px solid var(--main-color);
+        object-fit: cover;
+        height: 350px;
+        width: 410px;
     }
 }
